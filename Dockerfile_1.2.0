@@ -9,4 +9,6 @@ RUN apt-get update && apt-get install -y \
     apt-add-repository "deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial-4.0 main" && \
     apt-get update && apt-get install -y lld-4.0 
 
+ADD lib /root/dlang/ldc-1.2.0/lib_win
+
 CMD ["bash"]
